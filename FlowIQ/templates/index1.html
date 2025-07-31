@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="static/secondStyle.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7ec3b59267.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-zinc-900 relative" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+    <nav class="bg-zinc-800 h-[100px] flex items-center justify-around fixed w-full z-10 shadow-md shadow-zinc-700">
+      <div class="logo text-zinc-500 text-4xl font-bold">
+        Flow<span class="text-zinc-200 text-4xl font-bold">IQ</span>
+      </div>
+      <div class="navlinks  sm:block hidden">
+        <ul class="flex items-center gap-7">
+          <li>
+            <a
+              class="text-zinc-500 font-bold text-2xl hover:text-zinc-300 transition-all duration-200 ease-in-out"
+              href="/"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 font-bold text-2xl hover:text-zinc-300 transition-all duration-200 ease-in-out"
+              href="/visualize"
+              >Visualize</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Sadiq0909/UrbanFlowOptimization"
+              class="text-zinc-500 font-bold text-2xl hover:text-zinc-300 transition-all duration-200 ease-in-out"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="flex">
+      <aside class="lg:block hidden min-w-64 bg-zinc-800 shadow-sm shadow-zinc-300 h-screen top-[100px] overflow-y-auto sticky">
+          <div class="p-16">
+              <h2 class="text-zinc-300 text-4xl mb-7 font-bold " >Content</h2>
+              <ul class="text-zinc-500 text-xl">
+                  <li><a href="#data" class="block py-3 hover:text-zinc-300">Data</a></li>
+                  <li><a href="#corr" class="block py-3 hover:text-zinc-300">Correlation</a></li>
+                  <li><a href="#visualize" class="block py-3 hover:text-zinc-300">Visualize</a></li>
+                  <li><a href="#predict" class="block py-3 hover:text-zinc-300">Predict Pollution</a></li>
+                  <li><a href="#advance" class="block py-3 hover:text-zinc-300">Advance Visualization</a></li>
+              </ul>
+          </div>
+      </aside>
+      
+      <main class="main flex-grow top-[100px] mt-10 sm:mt-0">
+        <div id="data" class="data pt-16 sm:pt-32">
+          <h1 class="text-3xl sm:text-5xl sm:pl-8 lg:pl-24 p-4 sm:p-10 font-bold text-zinc-300 underline underline-offset-8">Data and Data Analysis</h1>
+          <p class="w-full sm:w-3/4 sm:pl-8 lg:pl-24 p-4 sm:p-5 text-zinc-500 font-bold mt-4 sm:mt-9 text-base sm:text-lg">Access a wealth of data on Allahabad, covering demographics, environment, and city development. Our analysis tools help you uncover patterns, trends, and insights from the data, enabling research and informed decisions. Explore detailed reports, visualizations, and more to understand the changing dynamics of Allahabad.
+          </p>
+      
+          <div class="flex flex-wrap lg:flex-nowrap mt-16 sm:mt-32 h-auto items-center justify-center gap-8 sm:gap-16 lg:gap-24">
+              <!-- First Card -->
+              <div class="getData rounded-xl w-full sm:w-2/3 lg:w-1/3 min-w-[250px] sm:min-w-[300px] min-h-[350px] bg-zinc-800 p-6 sm:p-8 flex flex-col gap-6 sm:gap-10">
+                  <h1 class="text-2xl sm:text-3xl font-bold text-zinc-300">See the Data</h1>
+                  <p class="text-sm sm:text-md font-bold text-zinc-500">Discover meaningful insights from the data with our in-depth analysis and visual reports.
+download raw data files directly and start your own analysis today
+</p>
+                  <div class="data_links flex flex-col">
+                      <a class="text-zinc-400 font-bold" href="https://drive.google.com/drive/folders/1XEYN9tG9_xgP8laSRyn7vyeoDloLaO-H" target="_blank">See Insights</a>
+                      <a class="text-zinc-400 font-bold" href="https://drive.google.com/drive/folders/1bsAvfqILfkEaA2l71xHzDzBSkrU00EU_" target="_blank">Download Data</a>
+                  </div>
+              </div>
+              <div class="xl:block hidden sline h-[250px] sm:h-[350px] rounded-full w-[2px] sm:w-[3px] bg-zinc-500"></div>
+      
+              <!-- Second Card -->
+              <div class="analysis rounded-xl w-full sm:w-2/3 lg:w-1/3 min-w-[250px] sm:min-w-[300px] min-h-[350px] bg-zinc-800 p-6 sm:p-8 flex flex-col gap-6 sm:gap-10">
+                  <h1 class="text-2xl sm:text-3xl font-bold text-zinc-300">Data Cleaning</h1>
+                  <p class="text-sm sm:text-md font-bold text-zinc-500">Our data cleaning process ensures accuracy by removing inconsistencies, filling gaps, and refining raw datasets for better analysis. We handle missing values, outliers, and duplicates to prepare reliable data for insights.
+
+</p>
+                  <div class="data_links flex flex-col">
+                      <a id="corr" class="text-zinc-400 font-bold" href="">Click to see Jupyter Notebooks</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="corr mt-16 sm:mt-32 px-4 sm:px-10 lg:px-20 ">
+          <h1 class="text-2xl sm:text-4xl font-bold text-zinc-300 mb-4 sm:mb-10 underline underline-offset-8">Correlation Between the Data</h1>
+          <ul class="w-3/4 mb-24 font-bold ">
+            <li class="mb-4"><h3 class="text-2xl text-zinc-400">Vehicle Count and Pollution Level</h3>
+              <p class="text-lg text-zinc-500">A very strong positive correlation (0.97) between vehicle_count and pollution_level suggests that more vehicles contribute significantly to pollution levels in the area.</p>
+            </li>
+            <li class="mb-4"><h3 class="text-2xl text-zinc-400">Public Transport and Vehicle Count</h3>
+              <p  class="text-lg text-zinc-500">A high positive correlation exists between bus_count, truck_count, and car_count, showing that as one type of vehicle increases, the others tend to as well, leading to higher congestion.
+              </p>
+            </li>
+            <li class="mb-4"><h3 class="text-2xl text-zinc-400">Temporal Influence</h3>
+              <p class="text-lg text-zinc-500">Having a Weekend shows a notable correlation (0.79) with the hour_of_day, indicating that traffic patterns vary significantly between weekdays and weekends, with certain hours being busier on weekends.
+                .</p>
+            </li>
+          </ul>
+          <img class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[90%] lg:h-[600px] lg:w-[700px]" src="static/maps/Correlation.png" alt="">
+      </div>
+      
+      <div id="visualize"  class="visualize sm:mt-24 mt-12 pl-4 sm:pl-10 lg:pl-20">
+        <h1 class="text-zinc-300 text-4xl font-bold mb-10 underline underline-offset-8">Visualize the Data</h1>
+          <div class="1 mb-20">
+            <h2 class="font-bold text-3xl text-zinc-400 mb-10 underline underline-offset-4">No. of Vehicles VS Weather Condition</h2>
+                  <p class="w-full sm:w-3/4 mb-4 text-zinc-500 font-bold text-base sm:text-lg">As the number of vehicles increases, the speed of traffic decreases due to congestion.
+Peak hours are a typical scenario where more vehicles lead to slower movement and increased traffic congestion
+          </p>
+            <img  class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[80%] lg:h-[600px] lg:w-[700px]" src="static/maps/noofvehiclevsweather.png" alt="">
+          </div>
+          <div class="2 mb-20">
+            <h2 class="font-bold text-3xl text-zinc-400 mb-10 underline underline-offset-4">No. of Vehicles VS Clear or Non Clear condition</h2>
+              <p class="w-full sm:w-3/4 mb-4 text-zinc-500 font-bold text-base sm:text-lg">Extreme weather conditions cause a reduction in vehicle count because drivers are more cautious or avoid travel altogether.
+Heavy rain or fog can cause delays and force fewer vehicles on the road.</p>
+            <img  class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[80%] lg:h-[600px] lg:w-[700px]" src="static/maps/vehiclevclear.png" alt="">
+          </div>
+          <div class="3 mb-20">
+            <h2 class="font-bold text-3xl text-zinc-400 mb-10 underline underline-offset-4">No. of Vehicles VS Holiday / Special Day</h2>
+              <p class="w-full sm:w-3/4 mb-4 text-zinc-500 font-bold text-base sm:text-lg">Regular weekdays typically have higher vehicle counts due to routine commutes to work or school.
+On holidays, people are less likely to commute, reducing traffic volumes.</p>
+            <img  class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[80%] lg:h-[600px] lg:w-[700px]" src="static/maps/vehicllevspecial.png" alt="">
+          </div>
+          <div class="4 mb-20">
+            <h2 class="font-bold text-3xl text-zinc-400 mb-10 underline underline-offset-4">Pollution Different types of vehicle</h2>
+              <p class="w-full sm:w-3/4 mb-4 text-zinc-500 font-bold text-base sm:text-lg">Extreme weather conditions cause a reduction in vehicle count because drivers are more cautious or avoid travel altogether.
+Heavy rain or fog can cause delays and force fewer vehicles on the road.</p>
+            <img  class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[80%] lg:h-[600px] lg:w-[700px]" src="static/Graphs/PollutionVSDifferentVehicles.png" alt="">
+          </div>
+          <div class="5 mb-20">
+            <h2 class="font-bold text-3xl text-zinc-400 mb-10 underline underline-offset-4">No. of Vehicles per day on different intersections</h2>
+            <img  class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[80%] lg:h-[600px] lg:w-[700px]" src="static/Graphs/Vehicle_per_day_per_intersection.png" alt="">
+          </div>
+          <div class="6 mb-20">
+            <h2 class="font-bold text-3xl text-zinc-400 mb-10 underline underline-offset-4">No. of Vehicles per hour on different intersection</h2>
+              <p class="w-full sm:w-3/4 mb-4 text-zinc-500 font-bold text-base sm:text-lg">The graph shows two peak traffic periods between 7 - 10 AM and 5 - 8 PM, with high vehicle counts at all intersections.</p>
+            <img  class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[80%] lg:h-[600px] lg:w-[700px]" src="static/Graphs/Vehicle_per_hour_per_intersection.png" alt="">
+          </div>
+          <div class="7 mb-20">
+            <h2 class="font-bold text-3xl text-zinc-400 mb-10 underline underline-offset-4">Weekend Impact on Pollution</h2>
+              <p class="w-full sm:w-3/4 mb-4 text-zinc-500 font-bold text-base sm:text-lg">On weekends, despite fewer commuters, there is a higher vehicle count due to leisure travel.
+This added traffic contributes to increased pollution on weekends, especially in urban areas with high vehicle numbers.</p>
+            <img  class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[80%] lg:h-[600px] lg:w-[700px]" src="static/Graphs/PollutionVsWeekend.png" alt="">
+          </div>
+          <div class="8 mb-20">
+            <h2 class="font-bold text-3xl text-zinc-400 mb-10 underline underline-offset-4">Weekend Impact on No of Vehicles</h2>
+            <img  class="rounded-lg h-[300px] w-[90%] sm:h-[450px] sm:w-[80%] lg:h-[600px] lg:w-[700px]" src="static/Graphs/vehicleVSweekends.png" alt="">
+          </div>
+      </div>
+
+      <div id="predict" class="form mt-48">
+        <form class="form md:w-3/4 sm:w-[500px] w-[450px] sm:p-0 min-h-[500px] mx-auto flex flex-col justify-center items-center" action="/predict" method="post">
+          <h1 class="text-5xl font-bold text-zinc-300 mb-20 underline underline-offset-8">Predict Amount of Pollution </h1>
+          <div class="flex flex-col gap-y-3 w-3/5 mb-4">
+            <label class="font-bold text-zinc-400 text-2xl" for="Car">No of Cars</label>
+            <input class="rounded-md  px-10 h-[40px] bg-zinc-700 text-zinc-400 font-bold" type="number" name="Car" step="any" placeholder="Enter the Car" />
+          </div>
+          <div class="flex flex-col gap-y-3 w-3/5 mb-4">
+            <label class="font-bold text-zinc-400 text-2xl" for="Bus">No of Buses</label>
+            <input class="rounded-md px-10 h-[40px] bg-zinc-700 text-zinc-400 font-bold" type="number" name="Bus" step="any" placeholder="Enter the Bus" />
+          </div>
+          <div class="flex flex-col gap-y-3 w-3/5 mb-4">
+            <label class="font-bold text-zinc-400 text-2xl" for="Truck">No of Trucks</label>
+            <input class="rounded-md px-10 h-[40px] bg-zinc-700 text-zinc-400 font-bold" type="number" name="Truck" step="any" placeholder="Enter the Truck" />
+          </div>
+          <div class="flex flex-col gap-y-3 w-3/5 mb-8">
+            <label class="font-bold text-zinc-400 text-2xl block" for="Motorcycle">No of Motorcycles</label>
+            <input class="rounded-md px-10 h-[40px] bg-zinc-700 text-zinc-400 font-bold" type="number" name="Motorcycle" step="any" placeholder="Enter the Motorcycle" />
+          </div>
+          <button id="advance" type="submit" class="mt-10 h-[40px] w-[200px] rounded-md font-bold text-zinc-300 bg-zinc-700">
+            Predict
+          </button>
+
+          <div  class="ans mt-20 text-zinc-900">
+            {% if prediction %}
+            <h2   class="text-center md:w-[600px] w-[400px] py-4 text-2xl rounded-lg bg-zinc-700 text-zinc-400 font-bold">Pollution : {{prediction}}</h2>
+  
+            {% endif %}
+          </div>
+        </form>
+
+
+        <div class="advance mt-32">
+          <h1 class="text-center text-4xl font-bold underline underline-offset-8 my-20 text-zinc-300">Advance Visualization using PowerBI</h1>
+          <div class="relative w-4/5 mx-auto" style="padding-top: 56.25%;">
+            <iframe class="absolute top-0 left-0 w-full h-4/5" title="traffic_analysis(1)[1]" src="https://app.powerbi.com/reportEmbed?reportId=0cc9c655-aa64-4fcc-97a4-affd0bcf632b&autoAuth=true&ctid=75c6a54f-cdc9-4ed2-941c-7096cf7dbda0" frameborder="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+        
+        
+      </div>
+        </div>
+      </div>
+      </main>
+  </div>
+  
+
+    <div class="footer absolute bottom-0 min-h-60 bg-zinc-800 shadow-sm shadow-zinc-600 w-full mt-40 pb-10">
+      <div class="line h-[3px] bg-zinc-500 w-full"></div>
+      <div class="footerContent flex justify-evenly gap-10 p-10">
+        <div class="logo text-white text-5xl font-bold flex justify-center items-center">Flow<span class="text-slate-500">IQ</span></div>
+      <div class="links sm:block hidden">
+        <ul class="flex flex-col gap-2 ">
+          <li class="text-2xl underline underline-offset-8 text-gray-400 mb-3">Quick Links</li>
+          <li><a href="/" class="text-gray-400 hover:text-gray-600">Home</a></li>
+          <li><a href="/visualize" class="text-gray-400 hover:text-gray-600">Visualize</a></li>
+          <li><a href="https://github.com/Sadiq0909/UrbanFlowOptimization" class="text-gray-400 hover:text-gray-600">Github</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="line h-[5px] w-3/5 mx-auto bg-gray-400 m-10"></div>
+      <div class="linksContact flex justify-center gap-20 text-5xl text-gray-500">
+        <div class="git">
+          <a href="https://github.com/Sadiq0909/UrbanFlowOptimization"><i class="fa-brands fa-github hover:text-gray-400"></i></a>
+        </div>
+      </div>
+  </div>
+
+  </body>
+</html>

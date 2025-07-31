@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="static/firstStyle.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7ec3b59267.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-zinc-900 " style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+    <nav class="bg-zinc-800 h-[100px] flex items-center justify-around">
+      <div class="logo text-zinc-500 text-4xl font-bold">
+        Flow<span class="text-zinc-200 text-4xl font-bold">IQ</span>
+      </div>
+      <div class="navlinks  sm:block hidden">
+        <ul class="flex items-center gap-7">
+          <li>
+            <a
+              class="text-zinc-500 font-bold text-2xl hover:text-zinc-300 transition-all duration-200 ease-in-out"
+              href="/"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-zinc-500 font-bold text-2xl hover:text-zinc-300 transition-all duration-200 ease-in-out"
+              href="/visualize"
+              >Visualize</a
+            >
+          </li>
+          <li>
+            <a
+                    href="https://github.com/Sadiq0909/UrbanFlowOptimization" target="_blank"
+              class="text-zinc-500 font-bold text-2xl hover:text-zinc-300 transition-all duration-200 ease-in-out"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero flex items-center sm:p-20 px-4 py-20">
+      <div class="hero_content text-center lg:mr-20">
+        <h1 class="text-zinc-200 text-5xl font-bold mb-7">
+          Traffic Flow Optimization
+        </h1>
+        <p class="text-zinc-400 font-bold">
+          Welcome to the Allahabad Data Analysis Hub! Explore key trends, urban growth, and environmental data with clear visualizations, empowering informed decisions and deeper insights into Allahabad’s dynamic landscape. Stay informed with data-driven insights!
+        </p>
+      </div>
+      <img
+        class="hidden lg:block lg:w-[480px] rounded-xl"
+        src="https://png.pngtree.com/background/20220720/original/pngtree-night-view-of-urban-traffic-flow-in-the-evening-picture-image_1684574.jpg"
+        alt=""
+      />
+    </div>
+
+    <div
+      class="about mx-auto max-w-screen-xl bg-zinc-800 md:mt-20 md:rounded-3xl min-h-60 text-center font-bold flex flex-col justify-center sm:px-24 px-5 py-2 shadow-xl shadow-zinc-700 gap-10"
+    >
+      <h1 class="text-4xl text-zinc-300">About</h1>
+      <p class="text-zinc-400">
+        Our platform offers data analysis of Allahabad's urban, environmental, and economic trends. We provide accurate, accessible insights to help researchers, policymakers, and citizens make informed decisions for a better future.
+      </p>
+    </div>
+
+    <div class="dataCards w-full md:mt-32 mt-20 flex flex-col items-center gap-16">
+      <div class="data_content w-3/4">
+        <h1 class="text-5xl text-center font-bold text-zinc-300 mb-10">
+          Get Data and Data Analysis
+        </h1>
+        <p class="text-zinc-500 font-bold">
+          Get the Data and explore detailed insights, trends, and visualizations based on the collected data, enabling a deeper understanding of the city’s changing landscape. Whether you're conducting research or making informed decisions, our analysis tools help you extract valuable insights from the data.
+        </p>
+      </div>
+      <div class="cards flex flex-wrap justify-evenly md:mt-20 mt-5 md:gap-32 gap-20">
+        <div
+          class="data h-[520px] bg-zinc-800 w-[380px] rounded-xl shadow-lg shadow-zinc-700 px-5 py-5 "
+        >
+          <img
+            class="rounded w-full h-[220px]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqF8LMFBfklYhPLHmGjiRHyY0nba25u1pG5w&s"
+            alt=""
+          />
+          <div class="card_content flex flex-col justify-center h-3/5">
+            <div class="title text-4xl font-bold text-zinc-200 mb-10">Data</div>
+              <p class="text-zinc-500 font-bold mb-3">
+                     Get  ,  download and see the DATA
+                   </p>
+                   <a href="https://drive.google.com/drive/folders/1bsAvfqILfkEaA2l71xHzDzBSkrU00EU_" target="_blank" class="text-zinc-400 hover:text-zinc-200 font-bold"
+                     >Click To See</a
+                   >
+          </div>
+        </div>
+        <div
+          class="data h-[520px] bg-zinc-800 w-[380px] rounded-xl shadow-lg shadow-zinc-700 px-5 py-5 "
+        >
+          <img
+            class="rounded w-full h-[220px]"
+            src="https://learnerbits.com/wp-content/uploads/2023/10/data-analysis-1024x576.webp"
+            alt=""
+          />
+          <div class="card_content flex flex-col justify-center h-3/5">
+            <div class="title text-4xl font-bold text-zinc-200 mb-10">See Analysis</div>
+              <p class="text-zinc-600 font-bold mb-3">
+                     Explore detailed insights, trends, and visualizations based on the collected data, enabling a deeper understanding of the city’s changing landscape
+                   </p>
+                   <a href="https://github.com/Sadiq0909/UrbanFlowOptimization" target="_blank" class="text-zinc-400 hover:text-zinc-200 font-bold"
+                     >Click To See</a
+                   >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="visualize w-screen">
+      <div class="container w-5/6 rounded-xl bg-zinc-800 min-h-64 mx-auto mt-32 flex justify-between flex-col-reverse lg:flex-row p-8 gap-10 shadow-xl shadow-zinc-700">
+        <div class="vis_content flex flex-col items-center justify-center gap-7">
+          <h1 class="text-3xl text-zinc-300 font-bold">Visualize the DATA</h1>
+          <p class="font-bold text-zinc-500">The "Visualize the Data" section transforms raw data into intuitive, interactive charts and graphs. Explore trends, patterns, and insights through dynamic visualizations that make complex information easy to understand. Customize and explore visual representations to gain deeper insights into Allahabad’s development, environment, and urban dynamics.
+</p>
+          <a class="text-zinc-400 font-bold hover:text-zinc-200" href="/visualize">Click Here</a>
+        </div>
+        <div class="vis_image">
+          <img class="h-full lg:w-[600px] w-4/5 mx-auto rounded-lg sm:block " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxsYVJLf86IJTsmRkTOK-TtWbBMrxd-xierw&s" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer min-h-80 bg-zinc-800 w-full mt-40 p-10">
+      <div class="footerContent flex justify-evenly gap-10">
+        <div class="logo text-white text-7xl flex justify-center items-center">Flow<span class="text-slate-500">IQ</span></div>
+      <div class="links sm:block hidden">
+        <ul class="flex flex-col gap-2 ">
+          <li class="text-2xl underline underline-offset-8 text-gray-400 mb-3">Quick Links</li>
+          <li><a href="/" class="text-gray-400 hover:text-gray-600">Home</a></li>
+          <li><a href="/visualize" class="text-gray-400 hover:text-gray-600">Visualize</a></li>
+          <li><a href="https://github.com/Sadiq0909/UrbanFlowOptimization" class="text-gray-400 hover:text-gray-600">Github</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="line h-[5px] w-3/5 mx-auto bg-gray-400 m-10"></div>
+      <div class="linksContact flex justify-center gap-20 text-5xl text-gray-500">
+
+        <div class="git">
+          <a href="https://github.com/Sadiq0909/UrbanFlowOptimization"><i class="fa-brands fa-github hover:text-gray-400"></i></a>
+        </div>
+
+  </div>
+
+  </body>
+</html>
